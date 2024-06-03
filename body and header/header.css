@@ -10,7 +10,7 @@ header {
   border-bottom:1px solid rgba(0, 0, 0, 0.426);
 }
 .logo-container {
-  width: clamp(4rem, 14.9vw, 10.5rem);
+  width: clamp(6rem, 15vw, 10.5rem);
   height: 0 auto;
 }
 .logo {
@@ -58,7 +58,7 @@ header {
 }
 .navigation {
   text-decoration: none;
-  font-size: clamp(6.5px, 1.5vw, 1.2rem);
+  font-size: clamp(8px, 1.6vw, 1.2rem);
   color: rgb(0, 8, 20);
   font-weight: 500;
   transition: 0.2s;
