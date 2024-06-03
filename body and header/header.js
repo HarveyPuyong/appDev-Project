@@ -26,7 +26,7 @@ window.addEventListener('scroll',()=>{
     header.style.gap = "9%";
     header.style.borderBottom = '1px solid rgba(0, 0, 0, 0.426)';
     navContainer.style.display = 'flex';
-    logo.style.width = 'clamp(1.5rem, 9.4vw, 6.6rem)';
+    logo.style.width = 'clamp(1.7rem, 9.6vw, 6.6rem)';
     cart.style.width = 'clamp(1rem, 3.7vw, 2.5rem)';
     cartQuantity.style.fontSize= "clamp(7px, 1.5vw, 0.9rem)";
     cartQuantity.style.top='10%'
@@ -44,14 +44,14 @@ window.addEventListener('scroll',()=>{
     header.style.width = '100%';
     header.style.position = 'static';
     navContainer.style.display = 'flex';
-    logo.style.width = 'clamp(5.2rem, 15vw, 10.5rem)';
-    cart.style.width = 'clamp(1.7rem, 4.2vw, 3.2rem)';
-    cartQuantity.style.fontSize= "clamp(6.5px, 1.5vw, 1.2rem)";
+    logo.style.width = 'clamp(4.8rem, 14.9vw, 10.5rem)';
+    cart.style.width = 'clamp(1.9rem, 4.4vw, 3.2rem)';
+    cartQuantity.style.fontSize= "clamp(8px, 1.8vw, 1.2rem)";
     cartQuantity.style.top='0%'
-    navigation1.style.fontSize= "clamp(10px, 1.7vw, 1.2rem)";
-    navigation2.style.fontSize= "clamp(10px, 1.7vw, 1.2rem)";
-    navigation3.style.fontSize= "clamp(10px, 1.7vw, 1.2rem)";
-    navigation4.style.fontSize= "clamp(10px, 1.7vw, 1.2rem)";
+    navigation1.style.fontSize= "clamp(15px, 1.8vw, 1.2rem)";
+    navigation2.style.fontSize= "clamp(15px, 1.8vw, 1.2rem)";
+    navigation3.style.fontSize= "clamp(15px, 1.8vw, 1.2rem)";
+    navigation4.style.fontSize= "clamp(15px, 1.8vw, 1.2rem)";
   }
 });
 
