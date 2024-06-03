@@ -18,7 +18,7 @@ header {
   height: auto;
 }
 .cart-container {
-  width: clamp(1.9rem, 4.4vw, 3.2rem);
+  width: clamp(2rem, 4.4vw, 3.2rem);
   height: 0 auto;
   position: relative;
 }
@@ -30,7 +30,7 @@ header {
   cursor: pointer;
 }
 .cart-quantity{
-  font-size: clamp(8px, 1.8vw, 1.2rem);
+  font-size: clamp(10px, 1.8vw, 1.2rem);
   position: absolute;
   color:rgb(2, 151, 2);
   right: 0;
@@ -58,7 +58,7 @@ header {
 }
 .navigation {
   text-decoration: none;
-  font-size: clamp(15px, 1.8vw, 1.2rem);
+  font-size: clamp(12px, 1.7vw, 1.2rem);
   color: rgb(0, 8, 20);
   font-weight: 500;
   transition: 0.2s;
