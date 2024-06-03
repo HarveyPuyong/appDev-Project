@@ -18,7 +18,7 @@ header {
   height: auto;
 }
 .cart-container {
-  width: clamp(2rem, 4.4vw, 3.2rem);
+  width: clamp(2.1rem, 4.4vw, 3.2rem);
   height: 0 auto;
   position: relative;
 }
