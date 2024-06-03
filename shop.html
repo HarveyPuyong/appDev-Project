@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="body and header/body.css">
+    <link rel="stylesheet" href="body and header/header.css">
+    <link rel="stylesheet" href="body and header/footer.css">
+    <link rel="stylesheet" href="style/shop.css">
+    <link rel="stylesheet" href="style/more bike detail.css">
+  </head>
+  
+  <body>
+    <!-----------------HEADER--------------------->
+    <header>
+      <div class="logo-container">
+        <img class="logo" src="body and header/logo and cart/bike zone logo.png">
+      </div>
+      <nav class="nav-container">
+        <a class="navigation home-navigation" href="home.html">HOME</a>
+        <a class="navigation shop-navigation" style="color:#ffd700">SHOP</a>
+        <a class="navigation contact-navigation" href="contact.html">CONTACT</a>
+        <a class="navigation about-navigation" href="#">ABOUT</a>
+      </nav>
+      <div class="cart-container">
+        <button class="cart-button">
+          <div class="cart-quantity">0</div>
+          <img class="cart-icon" src="body and header/logo and cart/cart icon.png">
+        </button>
+      </div>
+    </header>   
+   
+
+    <!-----------------MAIN--------------------->
+    <main>
+      <!--search bike section-->
+      <section class="type-and-search-section">
+        <div class="select-container">
+          <div class="type-label">TYPE</div>
+          <select class="select-bike-type" id="select-bike-type">
+            <option value="all">All</option>
+            <option value="mountain-bike">Mountain bike</option>
+            <option value="road-bike">Road bike</option>
+            <option value="kids-bike">Kids bike</option>
+            <option value="e-bike">E bike</option>
+          </select>
+          <div class="types-icon-container">
+            <img src="images and icon/shop icons/arrow more icon.png" onclick="triggerSelect()">
+          </div>
+        </div>
+
+
+        <div class="search-container">
+          <input class="search-input" id="search-input" type="search" placeholder="Search for bike">
+          <img class="search-icon" src="images and icon/shop icons/search icon.png" alt="search">
+        </div>
+      </section>
+
+      <!--shop bikes section-->
+      <section class="bikes-shop-section js-bikes-shop-section"> 
+      </section>
+
+       <section class="bike-more-detail-section">      
+      </section> 
+    </main>
+
+    <!-----------------FOOTER--------------------->
+    <footer>
+      <div class="important-details">
+        <container class="opening-hours-container">
+          <div class="opening-hours-text">OPENING HOURS</div>
+          <div class="details">
+            <di>MONDAY___8am - 10pm</di>
+            <di>TUESDAY___8am - 10pm</di>
+            <di>WEDNESDAY___8am - 10pm</di>
+            <di>THURSDAY___8am - 10pm</di>
+            <di>FRIDAY___8am - 10pm</di>
+            <di>SATURDAY___8am - 10pm</di>
+            <di>SUNDAY___8am - 10pm</di>
+          </div>
+        </container>
+        <container class="location-container">
+          <div class="location-text">LOCATION</div>
+          <div class="details">
+            <div>Boac, Marinduque</div>
+            <div>Santa, Cruz Marinduque</div>
+            <div>Gasan, Marinduque</div>
+            <div>Buenavista, Marinduque</div>
+          </div>
+
+        </container>
+        <container class="contact-container">
+          <div class="contact-text">CONTACT</div>
+          <div class="details">
+            <div>PHONE: 1234 567 8910</div>
+            <div>EMAIL: BikeZone@gmail.com</div>
+          </div>
+
+        </container>
+      </div>
+      <div class="other-social-media">
+        <div class="visit-us-text">And also you can visit at us</div>
+        <div class="icons-main-container">
+          <div class="icon-container">
+            <img class="icon" src="body and header/icon/facebook logo.png" alt="">
+          </div>
+          <div class="icon-container">
+            <img src="body and header/icon/twitter logo.png" alt="">
+          </div>
+          <div class="icon-container">
+            <img src="body and header/icon/instagram logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="body and header/header.js"></script>
+    <script type="module" src="script/shop.js"></script>
+  </body>
+
+</html>

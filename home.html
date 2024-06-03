@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <link rel="stylesheet" href="body and header/header.css">
+      <link rel="stylesheet" href="body and header/body.css">
+      <link rel="stylesheet" href="body and header/footer.css">
+      <link rel="stylesheet" href="style/home.css">
+   </head>
+   <body>
+      <!-----------------HEADER--------------------->
+       <header>
+         <div class="logo-container">
+            <img class="logo" src="body and header/logo and cart/bike zone logo.png">
+         </div>
+         <div class="nav-container">
+            <a class="navigation home-navigation" style="color:#ffd700">HOME</a>
+            <a class="navigation shop-navigation" href="shop.html">SHOP</a>
+            <a class="navigation contact-navigation" href="contact.html">CONTACT</a>
+            <a class="navigation about-navigation" href="#">ABOUT</a>           
+         </div>
+         <div class="cart-container">
+            <button onclick="showCart()" class="cart-button">
+              <div class="cart-quantity">0</div>
+             <img class="cart-icon" src="body and header/logo and cart/cart icon.png">
+            </button>
+          </div>
+       </header>
+           <!-- cart page -->
+        <div class="cart-overlay" id="cartOverlay">
+         <iframe src="cart.html" frameborder="0" width="100%" height="100%"></iframe>
+       </div>
+       
+       <!--New Arrival section-->
+       <main>
+         <section class="items-section">
+            <div class="yellow-bike-container">
+               <img class="yellow-bike" src="images and icon/home image and icon/yellow bike.png">
+            </div>
+            <div class="new-arrival-container">
+               <div>
+                  <p class="new-arrival-text">NEW ARRIVALS</p>
+               </div>
+               <div class="new-arrival-item">
+                  <div class="items-container">
+                     <img class="items" src="images and icon/E bike.png">
+                  </div>
+                  <div class="items-container">
+                     <img class="items" src="images and icon/kids bike.png">
+                  </div>
+                  <div class="items-container">
+                     <img class="items" src="images and icon/example bike.jpeg">
+                  </div>
+               </div>
+               <div class="view-shop-text">
+                  <button class="button view-shop-button">View in shop</button>
+               </div>
+            </div>
+            <div class="qoute-container">
+               <p class="qoute-text">BikeZone Sporting Good Shop</p>
+            </div>
+         </section>
+            <section class="about-section">
+               <div class="about-text-container">
+                  <p class="about-text">ABOUT</p>
+               </div>
+               <div class="pic-of-store-container">
+                  <img class="shop-image" src="images and icon/home image and icon/store pic.jpg">
+               </div>
+            </section>
+         </main>
+         <!--Footer-->
+      <footer>
+         <div class="important-details">
+            <container class="opening-hours-container">
+               <div class="opening-hours-text">OPENING HOURS</div>
+               <div class="details">
+                  <di>MONDAY___8am - 10pm</di>
+                  <di>TUESDAY___8am - 10pm</di>
+                  <di>WEDNESDAY___8am - 10pm</di>
+                  <di>THURSDAY___8am - 10pm</di>
+                  <di>FRIDAY___8am - 10pm</di>
+                  <di>SATURDAY___8am - 10pm</di>
+                  <di>SUNDAY___8am - 10pm</di>
+               </div>
+            </container>
+            <container class="location-container">
+               <div class="location-text">LOCATION</div>
+               <div class="details">
+                  <div>Boac, Marinduque</div>
+                  <div>Santa, Cruz Marinduque</div>
+                  <div>Gasan, Marinduque</div>
+                  <div>Buenavista, Marinduque</div>
+               </div>
+
+            </container>
+            <container class="contact-container">
+               <div class="contact-text">CONTACT</div>
+               <div class="details">
+                  <div>PHONE: 1234 567 8910</div>
+                  <div>EMAIL: BikeZone@gmail.com</div>
+               </div>
+
+            </container>
+          </div>
+          <div class="other-social-media">
+            <div class="visit-us-text">And also you can visit at us</div>
+            <div class="icons-main-container">
+               <div class="icon-container">
+                  <img class="icon" src="body and header/icon/facebook logo.png" alt="">
+               </div>
+               <div class="icon-container">
+                  <img src="body and header/icon/twitter logo.png" alt="">
+               </div>
+               <div class="icon-container">
+                  <img src="body and header/icon/instagram logo.png" alt="">
+               </div>
+            </div>
+          </div>
+      </footer>
+
+      <script src="body and header/header.js"></script> 
+      <script type="module" src="script/home.js"></script>    
+   </body>
+</html>
+   

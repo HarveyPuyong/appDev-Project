@@ -1,0 +1,110 @@
+.yellow-bike{
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+}
+.new-arrival-container{
+  margin-top:8%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-arrival-text{
+  font-size:clamp(0.8rem, 2.7vw, 1.9rem);
+}
+.new-arrival-item{
+  margin-top:4.6%;
+  margin-bottom:1.8%;
+  display: flex;
+  justify-content: space-evenly;
+  padding:0% 10.3%;
+}
+.items-container{
+  width:clamp(23%, 30vw, 22%);
+  max-height:11rem;
+  cursor: pointer;
+}
+.items{
+  height: 100%;
+
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+.new-arrival-item .items-container {
+  opacity: 1;
+}
+
+.animate-slide {
+  animation-fill-mode: forwards;
+}
+
+.new-arrival-item .items-container.animate-slide:nth-child(1) {
+  animation: slideFromLeft 2s ease forwards;
+}
+
+.new-arrival-item .items-container.animate-slide:nth-child(3) {
+  animation: slideFromRight 2s ease forwards;
+}
+
+
+.button{
+  color: rgb(0, 8, 20);
+  background-color:var(--main-color);
+  padding:4.5% 1%;
+  font-size:clamp(0.4rem, 1.1vw, 0.9rem );
+  width:clamp(3.4rem, 8.7vw, 6.6rem);
+  border: 1px solid rgb(89, 88, 88);
+  border-radius:3px;
+  cursor: pointer;
+}
+  .button:active{
+    font-size:clamp(0.4rem, 1vw, 0.8rem );
+  }
+.qoute-container{
+  margin-top:8%;
+  background-color: rgb(0, 8, 20);
+  height:clamp(3.6rem, 13.5vw, 12.7rem);
+  display:grid;
+  align-items: center;
+  justify-content: center;
+}
+.qoute-text{
+  color:white;
+  display: inline-block;
+  font-size:clamp(0.7rem, 2.5vw, 1.9rem);
+}
+.about-section{
+  display:flex;
+}
+.about-text{
+  font-size:clamp(0.9rem, 2.6vw, 2rem);
+}
+.shop-image{
+  max-height:1800px;
+  height: auto;
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+}
+.about-text-container,
+.pic-of-store-container{
+  flex:1;
+}
+.about-text-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 9%;
+}

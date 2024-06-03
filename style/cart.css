@@ -1,0 +1,295 @@
+/* header */
+header{
+  margin-top:0.8em;
+  display:flex;
+  padding-left: 1%;
+  padding-right:1%;
+  padding-bottom:1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.198);
+  justify-content: space-between;
+  align-items:end;
+}
+.your-cart-text{
+  font-weight:700;
+  font-size: clamp(0.9rem, 3vw, 1.6rem);
+}
+.back-button-container{
+  width:clamp(0.9rem, 3vw, 2rem);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0%;
+  opacity:0.7 ;
+}
+.exit-button{
+  border: none;
+  background-color: white;
+}
+/*----------Main------ */
+main{
+  display: flex;
+  justify-content: space-between;
+  gap:1.5%;
+  margin-right:1%;
+  margin-left:1.2%;
+  margin-top:1em;
+  padding-bottom:12px;
+}
+ 
+/*Added in cart-section*/
+.added-in-cart-section{
+  flex:2;
+  max-height:37.5rem;
+  overflow-y:scroll;
+  scrollbar-width:thin; 
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding-top:1em;
+  text-align:center;
+
+}
+th:first-child{
+  padding-left:20px;
+  text-align: left;
+}
+th {
+  padding:10px 12px;
+  font-weight: 700;
+  font-size:clamp(0.5rem, 1.5vw, 1.1rem);
+  background-color: #f2f2f2;
+}
+
+tbody{
+  font-size: clamp(0.750rem, 1.4vw, 1rem);
+}
+tbody:first-child{
+  text-align: left;
+}
+.bike-container {
+  display: flex;
+  max-width: 100%;
+  min-width:312px;
+  gap:5%;
+  align-items: center;
+}
+.delete-icon{
+  background-color:white;
+  opacity:0.7;
+  width:18px;
+  height: 20px;
+}
+.bike-image{
+  min-width:5.5rem;
+  height:4.2rem;
+}
+@media(max-width: 30em){
+  .delete-icon{
+    width:0.6rem;
+    height:0.6rem;
+  }
+  .bike-image{
+    min-width:3rem;
+    height:2.4rem;
+  }
+}
+.bike-details{
+  align-self: start;
+  text-align: left;
+  width: 100%;
+  display:grid;
+  gap:5%;
+  height: 100%;
+}
+.quantity-container{
+  position: relative;
+  margin-left:8%;
+  margin-right:8%;
+}
+.btn-minus,
+.btn-plus {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  border:none;
+  background: transparent;
+  opacity:0.9;
+  width:11%;
+}.btn-minus {
+  left:7%;
+}.btn-plus {
+  right:7%;
+}
+.input-quantity{
+  width:100%;
+  height: 100%;
+  padding:5% 15%;
+  font-size: clamp(0.7rem, 1.3vw, 0.950rem);
+  text-align: center; 
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  border-radius: 3px;
+}
+.bike-details div {
+  font-size: clamp(0.650rem, 1.1vw, 0.8rem);
+}
+/* Subtotal section */
+.subtotal-and-view-order-section{
+  flex:1;
+  flex-direction: column;
+  justify-items: center;
+  align-items:center;
+  display: flex;
+}
+.subtotal-section{
+  background-color: rgb(240, 239, 239);
+  border: 1.4px solid rgba(0, 0, 0, 0.293);
+  border-radius: 5px;
+  padding:1.5rem 1rem;
+  width:100%;
+}
+.subtotal-container{
+  display: flex;
+  justify-content: space-between;
+  font-weight:700 ;
+}
+.subtotal-text,
+.subtotal{
+  font-size: clamp(0.7rem, 1.6vw, 1.2rem);
+}
+.note{
+  font-size: clamp(0.3rem, 1.150vw, 0.9rem);
+  margin-top:20%;
+  margin-bottom:2%;
+}
+.checkout-button{
+  border:1px solid rgba(0, 0, 0, 0.36);
+  font-weight: 700;
+  font-size: clamp(0.4rem, 1.250vw, 1rem);
+  padding:3% 10%;
+  background-color:var(--main-color) ;
+  width: 100%; 
+}
+  .checkout-button:active{
+      filter: grayscale(5%)brightness(85%);
+  }
+.view-orders-button-container{
+  width:80%;
+  max-width:15rem;
+  justify-items: center;
+}
+.view-orders-button{
+  background-color:var(--secondary-color);
+  color: var(--main-color);
+  font-size:clamp(0.7rem, 2vw, 1.1rem);
+  border-radius:4px;
+  margin-top:8%;
+  width:100%;
+  padding:0.3rem 0;
+}
+    
+@media(max-width:50em){
+  main{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right:0.5%;
+    margin-left:0.5%;
+  }
+  .added-in-cart-section{
+    flex:0.1;
+    border-bottom: 1px solid black;
+    max-height:26rem;
+    padding-bottom:1rem;
+  }
+  th {
+    font-size:clamp(0.550rem, 2.2vw, 1.1rem);
+    padding:10px 5px;
+  }
+  tbody{
+    padding-top:10px;
+    font-size: clamp(0.5rem, 2.2vw, 1rem);
+  }
+  tbody:first-child{
+    text-align: left;
+  }
+  .bike-container {
+    display: flex;
+    max-width: 100%;
+    min-width:140px;
+    gap:5%;
+    align-items: center;
+  }
+  .bike-details{
+    align-self: start;
+    text-align: left;
+    width: 100%;
+    display:grid;
+    height: 100%;
+  }
+  .input-quantity{
+    font-size: clamp(0.5rem, 2.1vw, 1rem);
+  }
+  .bike-details div {
+    font-size: clamp(0.5rem, 1.9vw, 0.7rem);
+  }
+  .subtotal-and-view-order-section{
+    gap:5%;
+    margin-top:3%;
+  }
+  .subtotal-section{
+    padding:2%;
+    width: 90%;
+  }
+  .subtotal-container{
+    display: flex;
+    font-weight:700 ;
+  }
+  .subtotal-text,
+  .subtotal{
+    font-size: clamp(0.7rem, 2.9vw, 1.2rem);
+  }
+  .note{
+    font-size: clamp(0.6rem, 1.7vw, 30rem);
+    margin-top:2.5rem;
+  }
+  .checkout-button{
+    font-size: clamp(0.6rem, 1.8vw, 1.5rem);
+    padding:3% 10%;
+    background-color:var(--main-color) ;
+    width: 100%; 
+  }
+  .view-orders-button-container{
+    width:10rem;
+  }
+}
+@media (max-width:40em) {
+  .subtotal-and-view-order-section{
+    flex-direction:column;
+    gap:5%;
+    margin-top:3%;
+  }
+}
+
+body {
+  animation: slideFromRight 0.5s forwards;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

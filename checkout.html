@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="body and header/body.css">
+    <link rel="stylesheet" href="style/checkout.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-and-checkout-text">
+        <img class="image" src="images and icon/checkout icons/bike logo.png" alt="">
+        CHECKOUT
+      </div>
+      <div class="exit-button-container">
+        <div class="exit-button">Continue Browsing</div>
+      </div>
+    </header>
+    <main>
+      <p class="form-reminder">Fill the order form to complete your purchase</p>
+      <form>
+        <section class="fill-up-section">
+          <div class="container payment-method-container">
+            <p class="text"><span class="number">2</span> Payment method</p>
+            <div class="payment-method" >
+              <input type="radio" name="payment-method" id="deliver-method" class="method" checked required>
+              <label for="deliver-method">Deliver</label>
+            </div>
+            <div class="payment-method" style="margin-bottom:2rem;">
+              <input type="radio" name="payment-method" id="pickup-method" class="method" required>
+               <label for="pickup-method">In-store pickup</label>
+            </div>
+          </div>
+
+          <div class="container delivery-adress-container">
+            <p class="text"><span class="number">3</span> Delivery adress</p>
+            <div class="adress-container">
+              <input type="text" placeholder="Municipal in marinduque" required style="flex:1;">
+              <input type="text" placeholder="Barangay" required style="flex:1;">
+              <input type="number" placeholder="Zone" required style="flex:0.3;">
+            </div>
+            <input type="text" placeholder="Name of reciever" required>
+          </div>
+
+          <div class="container picker-information-container">
+            <p class="text"><span class="number">3</span>Picker Information</p>
+            <div class="name-container">
+              <input type="text" placeholder="First name" required>
+              <input type="text" placeholder="Last name" required>
+            </div>
+            <div class="picker-id-container"> 
+             Picker ID<input type="file" accept="image/*" class="picker-id-input">
+              
+            </div>
+          </div>
+          
+          <div class="submit-button-container">
+            <button class="submit-button">Submit</button>
+          </div>
+        </section>
+
+        <!--order summary section -->
+        <section class="order-summary-section">
+          <div class="header">
+            <p style="font-weight:bold; font-size:clamp(0.8rem, 2.4vw, 1.1rem);">Order summary</p>
+            <a style="color:black; font-size:clamp(0.7rem, 2.3vw, 0.9rem);" href="cart.html">Edit cart</a>
+            </div>
+            <div class="main checkout-container">
+           
+            </div>
+        
+          <div class="total">Total: &#8369;<span class="subtotal-price"></span></div>
+        </section>       
+      </form>
+    </main>
+
+    <script type="module" src="script/checkout.js"></script>
+    <script type="module" src="data/checkoutDetail.js"></script>
+  </body>
+</html>

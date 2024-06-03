@@ -1,0 +1,224 @@
+.type-and-search-section{
+  display:flex;
+  gap:3%;
+  padding-left:16%;
+  padding-right:21%;
+  margin-top:3%;
+  margin-bottom: 1.5em;
+  align-items:end;
+
+}
+.select-container{
+  width: clamp(4.3rem, 15vw, 11.1rem); 
+  text-align: center;
+  text-justify: end;
+  position: relative;
+}
+.type-label{
+  font-size: clamp(7px, 1.7vw, 1.2rem);
+  font-weight: 540;
+  color: var(--seconday-color);
+  padding-left:5%;
+  margin-bottom:5%;
+}
+.select-container .select-bike-type{
+  font-size: clamp(7px, 1.5vw, 1rem);
+  color:var(--seconday-color);
+  border:1.5px solid black;
+  width: 100%;
+  text-align: center;
+  appearance: none;
+  padding:5% 0%;
+  border-radius: 4px;
+  z-index: 1000;
+  padding-left:5%;
+}
+
+.types-icon-container{
+  position: absolute;
+  width: clamp(0.6rem, 1.8vw, 1.3rem);
+  right:1%;
+  top:60%;
+  z-index:0;
+  pointer-events: none;
+}
+@media(max-width:35em){
+  .types-icon-container{
+    top:61%;
+  }
+  .type-label{
+    margin-bottom: 0;
+  }
+}
+
+.search-container{
+  position: relative;
+  flex:1;
+  display:grid;
+  align-items: end;
+
+}
+.search-input{
+  border-radius:14px;
+  border: 1px solid black;
+  padding: 1.2% 0%;
+  padding-left: 2%;
+  font-size: clamp(7px, 1.6vw, 1.1rem);
+  width:100%;
+  height:100%;
+}
+.search-icon{
+  border-radius: 5px;;
+  padding:0.5%;
+  position: absolute;
+  width:clamp(0.7rem, 2.4vw, 2.6rem);
+  top:50%;
+  right:5%;
+  transform: translate(50%, -50%);
+}
+
+/*shop bike section*/
+.bikes-shop-section {
+  background-color: rgb(251, 251, 251);
+  display:flex;
+  flex-wrap: wrap;
+  padding-right:6.4%;
+  padding-left:7.3%;
+  padding-top:2.5%;
+  padding-bottom:2.4%;
+  margin-bottom:8%;
+  border-radius: 8px;
+  justify-content: flex-start;
+  overflow-y: auto;
+  gap:0.9%;
+}
+
+.bike-container {
+  background-color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5% 0%;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 8, 20, 0.2);
+  width: calc(28% - 3.7%); /* Adjusted width for 4 items, considering the padding */
+  margin-bottom:1%;
+  overflow: hidden;
+}
+
+.bike-container .bike-image{
+  width: 85%;
+}
+.bike-image img{
+  height:clamp(70px, 14vw, 160px);
+}
+.bike-container .bike-name {
+  padding: 0% 11.5%;
+  font-size: clamp(8px, 1.2vw, 0.9rem);
+  margin-top:6.4%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all; 
+}
+
+.bike-container .bike-price{
+  margin-top:18%;
+  font-size: clamp(9px, 1.5vw, 1.1rem);
+}
+.added-in-cart-text {
+  position: absolute;
+  font-size: clamp(0.5rem, 1.3vw, 0.970rem);
+  color: white;
+  background-color: rgb(21, 129, 2);
+  border-radius: 4px;
+  top: 5px;
+  left: 5px;
+  opacity: 0;
+  padding: 2%;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+  transform: translateX(-100%);
+}.added-in-cart-text.show {
+  opacity: 1;
+  transform: translateX(0%);
+}.added-in-cart-text.hide {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.order-button-and-cart{
+  display:grid;
+  grid-template-columns: 1fr 18%;
+  gap:6%;
+  width: 100%;
+  padding:0% 18%;
+  margin-top:1.5%;
+}
+.order-button-container .order-buttons{
+  background-color: var(--main-color);
+  font-size: clamp(9px, 1.5vw, 1.1rem);
+  display: block;
+  height:95%;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--seconday-color);
+}
+ .order-button:hover{
+  filter: grayscale(5%)brightness(85%);
+ }
+ .order-button:active{
+  filter: grayscale(0%)brightness(102%);
+ }
+.mini-cart-container{
+  width:100%;
+}
+.add-to-cart-button{
+  border: none;
+}
+
+@media (max-width:66em) {
+  .bikes-shop-section{
+    grid-template-columns: repeat(3, 1fr);
+    padding:2.5% 6%;
+  }
+  .bike-container {
+    width: calc(42% - 9.5%); /* Adjusted width for 3 items */
+  }
+  .bike-name{
+      font-size: clamp(8.3px, 1.5vw, 1rem);
+    }
+  .bike-price{
+    font-size: clamp(10px, 2vw, 1.2rem);
+  }
+  .order-button{
+    font-size: clamp(8.4px, 1.5vw, 1rem);
+  }
+}
+@media (max-width:26.5em) {
+  .bikes-shop-section{
+     grid-template-columns: repeat(2, 1fr);
+     padding:2.5% 9%;
+    }
+  .bike-container {
+    width: calc(52% - 2.5%); /* Adjusted width for 2 items */
+  }
+  .bike-price{
+      font-size: clamp(10px, 3.3vw, 1.25rem);
+  }
+  .bike-name{
+    font-size: clamp(8px, 2.6vw, 0.9rem);
+  }
+  .order-button{
+    font-size: clamp(8.4px, 2.6vw, 0.9rem);
+  }
+  
+    
+
+}
+body {
+  animation: slideFromLeft 0.5s forwards;
+}

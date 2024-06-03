@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="body and header/body.css">
+    <link rel="stylesheet" href="body and header/header.css">
+    <link rel="stylesheet" href="style/contact.css">
+  </head>
+  <body>
+    <!-------------------HEADER--------------->
+    <header>
+      <div class="logo-container">
+         <img class="logo" src="body and header/logo and cart/bike zone logo.png">
+      </div>
+      <div class="nav-container">
+         <a class="navigation home-navigation" href="home.html">HOME</a>
+         <a class="navigation shop-navigation" href="shop.html">SHOP</a>
+         <a class="navigation contact-navigation" style="color:#ffd700">CONTACT</a>
+         <a class="navigation about-navigation" href="#">ABOUT</a>
+           
+      </div>
+      <div class="cart-container">
+        <button onclick="showCart()" class="cart-button">
+          <div class="cart-quantity">0</div>
+         <img class="cart-icon" src="body and header/logo and cart/cart icon.png">
+        </button>
+      </div>
+    </header>
+        <!-- cart page -->
+     <div class="cart-overlay" id="cartOverlay">
+      <iframe src="cart.html" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+
+    <main>
+      <p class="contact-us-text">CONTACT US</p>
+      <section class="opening-hours-and-location-section">
+        <div class="store-location">
+          <div class="location-icon"><img src="images and icon/contact icons/location icon.png"></div>
+          <h2>OUR STORE</h2>
+          <div class="all-location all-location-details">
+            <div class="detail location">Boac, Marinduque</div>
+            <div class=" detail location">Santa Cruz, Marinduque</div>
+            <div class="detail location">Gasan, Marinduque</div>
+            <div class="detail location">Buenavista, Marinduque</div>
+          </div>
+          <div class="email-and-tel-number">
+            <div class="detail email">BikeZone@gmail.com</div>
+            <div class="detail tel-number">Tel: 09123456789</div>
+          </div>
+        </div>
+        <div class="store-opening-hours">
+          <div class="clock-icon"><img src="images and icon/contact icons/clock icon.png"></div>
+          <h2>OPENING HOURS</h2>
+          <div class="opening-hours-details">
+            <div class="detail"><b>Monday - Friday</b>: 8:00am - 12:00pm</div>
+            <div class="detail"><b>Saturday</b>: 9:00am - 12:00pm</div>
+            <div class="detail"><b>Sunday</b>: 9:00am - 12:00pm</div>
+          </div>
+        </div>     
+      </section>
+      <!-------------MESSAGE US SECTION------------>
+      <section class="message-us-section">
+        <div class="text">You can also email us at: <p style="text-decoration: underline;">BikeZone@gmail.com </p> or fill in our contact form</div>
+        <form action="../administrator/php/save_messages.php" method="post">
+          <div class="contact-form">
+            <div class="user-info">
+              <div><input type="text" placeholder="Name" class="Name" id="Name" name="Name" required></div>
+              <div><input type="email"  placeholder="Email" class="Email" id="Email" name="Email" required></div>
+              <div><input type="text" placeholder="Subject" class="Subject" id="Subject" name="Subject" required></div>
+            </div>
+            <div class="message">
+              <textarea class="message-input" class="txtMessage" id="txtMessage" name="txtMessage" placeholder="Message here."></textarea>
+            </div>
+          </div>
+          <div class="thanks-and-submit">
+            <div class="text submitting-text">Thanks for submitting!</div>
+            <div>
+              <button type="submit" class="submit-button">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="other-social-media">
+          <div class="text visit-us-at-text">And also you can visit us at:</div>
+          <div class="icons-main-container">
+            <div class="icon-container"><img class="icon" src="images and icon/contact icons/twitter logo.png" alt=""></div>
+            <div class="icon-container"><img class="icon" src="images and icon/contact icons/facebook logo.png" alt=""></div>
+            <div class="icon-container"><img class="icon" src="images and icon/contact icons/instagram logo.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </main>
+  </body>
+</html>
+  <script src="body and header/header.js"></script>
+  <script type="module" src="script/contact.js"></script>
