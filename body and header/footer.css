@@ -13,6 +13,7 @@ footer{
 .important-details{
   display: flex;
   justify-content:space-between;
+  gap:4%;
 }
 .opening-hours-text,
 .location-text,
