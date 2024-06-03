@@ -10,7 +10,7 @@ header {
   border-bottom:1px solid rgba(0, 0, 0, 0.426);
 }
 .logo-container {
-  width: clamp(6rem, 15vw, 10.5rem);
+  width: clamp(5.2rem, 15vw, 10.5rem);
   height: 0 auto;
 }
 .logo {
@@ -18,7 +18,7 @@ header {
   height: auto;
 }
 .cart-container {
-  width: clamp(1.4rem, 4.1vw, 3.2rem);
+  width: clamp(1.7rem, 4.2vw, 3.2rem);
   height: 0 auto;
   position: relative;
 }
@@ -58,7 +58,7 @@ header {
 }
 .navigation {
   text-decoration: none;
-  font-size: clamp(8px, 1.6vw, 1.2rem);
+  font-size: clamp(10px, 1.7vw, 1.2rem);
   color: rgb(0, 8, 20);
   font-weight: 500;
   transition: 0.2s;
