@@ -46,12 +46,12 @@ window.addEventListener('scroll',()=>{
     navContainer.style.display = 'flex';
     logo.style.width = 'clamp(4.8rem, 14.9vw, 10.5rem)';
     cart.style.width = 'clamp(2rem, 4.4vw, 3.2rem)';
-    cartQuantity.style.fontSize= "clamp(8px, 1.8vw, 1.2rem)";
+    cartQuantity.style.fontSize= "clamp(10px, 1.9vw, 1.2rem)";
     cartQuantity.style.top='0%'
-    navigation1.style.fontSize= "clamp(12px, 1.7vw, 1.2rem)";
-    navigation2.style.fontSize= "clamp(12px, 1.7vw, 1.2rem)";
-    navigation3.style.fontSize= "clamp(12px, 1.7vw, 1.2rem)";
-    navigation4.style.fontSize= "clamp(12px, 1.7vw, 1.2rem)";
+    navigation1.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
+    navigation2.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
+    navigation3.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
+    navigation4.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
   }
 });
 
