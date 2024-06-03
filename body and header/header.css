@@ -2,7 +2,7 @@ header {
   display: flex; 
   align-items: center;
   justify-content: space-between;
-  gap:8%;
+  gap:6%;
   background-color: white;
   width:100%;
   z-index:1000;
@@ -35,7 +35,7 @@ header {
   color:rgb(2, 151, 2);
   right: 0;
   transform: translateY(-40%); 
-  top:0;
+  top: 5px;
 }
 .cart-overlay {
   position: fixed;
