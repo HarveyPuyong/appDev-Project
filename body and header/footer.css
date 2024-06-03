@@ -12,7 +12,6 @@ footer{
 }
 .important-details{
   display: flex;
-  justify-content:space-between;
 }
 .opening-hours-container,
 .location-container{
