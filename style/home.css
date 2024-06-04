@@ -130,15 +130,11 @@
   font-size:clamp(0.6rem, 2.2vw, 1.4rem);
   margin-top:7%;
 }
-@media(max-width:400px) {
+@media(max-width:25rem) {
   .about-text-container{
-    justify-content: center;
     padding-top:5%;
-    padding-right:3.8%;
-    padding-left:2%;
-    color:#dfbe03;
-    text-align: center;
-  
+    padding-right:5%;
+    padding-left:2%; 
   }
   .about-details{
     max-height:260px;

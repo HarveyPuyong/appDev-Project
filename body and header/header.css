@@ -11,7 +11,7 @@ header {
   border-bottom:1px solid rgba(0, 0, 0, 0.426);
 }
 .logo-container {
-  width: clamp(4.650rem, 14.8vw, 10.5rem);
+  width: clamp(4.4rem, 14.7vw, 10.5rem);
   height: 0 auto;
 }
 .logo {
