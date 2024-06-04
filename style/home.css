@@ -141,8 +141,8 @@
   
   }
   .about-details{
-    max-height:230px;
+    max-height:250px;
     overflow-x: scroll;
-    scroll-snap-align:inherit;
+  scrollbar-width: thin;
   }
 }
