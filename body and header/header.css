@@ -2,16 +2,16 @@ header {
   display: flex; 
   align-items: center;
   justify-content: space-between;
-  gap:6%;
+  gap:4%;
   background-color: white;
   width:100%;
   z-index:1000;
   transition: 0.2em;
-  padding-top:0.7rem;
+  padding-top:0.2rem;
   border-bottom:1px solid rgba(0, 0, 0, 0.426);
 }
 .logo-container {
-  width: clamp(4.7rem, 14.8vw, 10.5rem);
+  width: clamp(4.650rem, 14.8vw, 10.5rem);
   height: 0 auto;
 }
 .logo {
@@ -19,7 +19,7 @@ header {
   height: auto;
 }
 .cart-container {
-  width: clamp(1.850rem, 4.250vw, 3.2rem);
+  width: clamp(1.5rem, 4.250vw, 3.2rem);
   height: 0 auto;
   position: relative;
 }
@@ -59,7 +59,7 @@ header {
 }
 .navigation {
   text-decoration: none;
-  font-size: clamp(9px, 1.7vw, 1.2rem);
+  font-size: clamp(8px, 1.7vw, 1.2rem);
   color: rgb(0, 8, 20);
   font-weight: 500;
   transition: 0.2s;

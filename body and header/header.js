@@ -44,14 +44,14 @@ window.addEventListener('scroll',()=>{
     header.style.width = '100%';
     header.style.position = 'static';
     navContainer.style.display = 'flex';
-    logo.style.width = 'clamp(4.7rem, 14.8vw, 10.5rem)';
-    cart.style.width = 'clamp(1.850rem, 4.250vw, 3.2rem)';
+    logo.style.width = 'clamp(4.6rem, 14.8vw, 10.5rem)';
+    cart.style.width = 'clamp(1.5rem, 4.250vw, 3.2rem)';
     cartQuantity.style.fontSize= "clamp(12px, 1.9vw, 1.2rem)";
     cartQuantity.style.top='0%'
-    navigation1.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
-    navigation2.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
-    navigation3.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
-    navigation4.style.fontSize= "clamp(9px, 1.7vw, 1.2rem)";
+    navigation1.style.fontSize= "clamp(8px, 1.7vw, 1.2rem)";
+    navigation2.style.fontSize= "clamp(8px, 1.7vw, 1.2rem)";
+    navigation3.style.fontSize= "clamp(8px, 1.7vw, 1.2rem)";
+    navigation4.style.fontSize= "clamp(8px, 1.7vw, 1.2rem)";
   }
 });
 
