@@ -2,7 +2,7 @@ header {
   display: flex; 
   align-items: center;
   justify-content: space-between;
-  gap:9%;
+  gap:7%;
   background-color: white;
   width:100%;
   z-index:1000;
