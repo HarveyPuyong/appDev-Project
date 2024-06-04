@@ -55,7 +55,14 @@ header {
 .nav-container {
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
+  padding:0 2%;
+}
+@media(min-width:700px){
+  .nav-container{
+    justify-content: space-evenly;
+    padding:0;
+  }
 }
 .navigation {
   text-decoration: none;
