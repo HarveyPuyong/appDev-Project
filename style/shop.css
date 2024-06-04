@@ -150,17 +150,18 @@
 }
 .order-button-and-cart{
   display:grid;
-  grid-template-columns: 1fr 18%;
-  gap:6%;
+  grid-template-columns: 1fr 19%;
+  gap:5%;
   width: 100%;
-  padding:0% 18%;
+  padding:0% 17%;
+  padding-right:11%;
   margin-top:1.5%;
 }
 .order-button-container .order-buttons{
   background-color: var(--main-color);
   font-size: clamp(9px, 1.5vw, 1.1rem);
   display: block;
-  height:95%;
+  height:100%;
   width: 100%;
   border: none;
   border-radius: 3px;
