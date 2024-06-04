@@ -2,11 +2,11 @@ footer{
   display:grid;
   margin-top:4%;
   padding-top:1.8%;
-  padding-bottom:0.5% ;
+  padding-bottom:2% ;
   padding-left:18%;
   padding-right:17% ;
   font-weight:300;
-  font-size:clamp(0.3rem, 1.2vw, 0.7rem);
+  font-size:clamp(0.3rem, 1.4vw, 0.7rem);
   background-color: var(--secondary-color);
   color:rgba(255, 255, 255, 0.73);
 }
@@ -22,7 +22,7 @@ footer{
 .location-text,
 .contact-text{
   font-weight:800;
-  font-size:clamp(0.350rem, 1.3vw, 0.8rem);
+  font-size:clamp(0.350rem, 1.5vw, 0.8rem);
   color:var(--main-color);
 }
 
@@ -42,7 +42,7 @@ footer{
 .visit-us-text{
   color: var(--main-color);
   font-weight:700;
-  font-size:clamp(0.350rem, 1.3vw, 0.8rem);
+  font-size:clamp(0.350rem, 1.5vw, 0.8rem);
 }
 .icons-main-container{
   margin-top:10%;
