@@ -115,7 +115,7 @@
 }
 .bike-container .bike-name {
   padding: 0% 11.5%;
-  font-size: clamp(9px, 1.4vw, 0.9rem);
+  font-size: clamp(9px, 1.320vw, 0.9rem);
   margin-top:6.4%;
   width: 100%;
   overflow: hidden;
