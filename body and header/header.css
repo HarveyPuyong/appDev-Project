@@ -55,7 +55,7 @@ header {
 .nav-container {
   flex: 1;
   display: flex;
-  justify-content:spa;
+  justify-content:space-between;
   padding:0 2%;
 }
 @media(min-width:700px){
