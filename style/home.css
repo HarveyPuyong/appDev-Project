@@ -141,7 +141,7 @@
   
   }
   .about-details{
-    max-height:250px;
+    max-height:260px;
     overflow-x: scroll;
   scrollbar-width: thin;
   }
