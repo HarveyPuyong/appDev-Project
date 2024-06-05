@@ -1,4 +1,4 @@
- export function moreBikeDetail(orderButton, addToCart, cart){
+export function moreBikeDetail(orderButton, addToCart, cart){
   const bikeShopSection =  document.querySelector('.bikes-shop-section');
  const bikeMoreDetail =  document.querySelector('.bike-more-detail-section');
 
@@ -61,7 +61,7 @@
                 data-bike-id="${bikeId}"
                 data-bike-type="${bikeType}"
                 data-bike-name="${bikeName}"
-                data-bike-price="${bikePrice}"><img src="body and header/logo and cart/cart icon.png" alt="">
+                data-bike-price="${bikePrice}"><img class="cart-image" src="body and header/logo and cart/cart icon.png" alt="">
               </button>
             </div>
           </div>

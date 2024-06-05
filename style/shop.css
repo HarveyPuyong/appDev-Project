@@ -6,16 +6,15 @@
   margin-top:5%;
   margin-bottom: 1.5em;
   align-items:end;
-
 }
 .select-container{
-  width: clamp(4.3rem, 15vw, 11.1rem); 
+  width: clamp(5rem, 16vw, 11.1rem); 
   text-align: center;
   text-justify: end;
   position: relative;
 }
 .type-label{
-  font-size: clamp(7px, 1.7vw, 1.2rem);
+  font-size: clamp(9px, 1.7vw, 1.2rem);
   font-weight: 540;
   color: var(--seconday-color);
   padding-left:5%;
@@ -37,7 +36,7 @@
 .types-icon-container{
   position: absolute;
   width: clamp(0.6rem, 1.8vw, 1.3rem);
-  right:5%;
+  right:3%;
   top:60%;
   z-index:0;
   pointer-events: none;
@@ -48,6 +47,15 @@
   }
   .type-label{
     margin-bottom: 0;
+  }
+  .type-and-search-section{
+    display:flex;
+    gap:3%;
+    padding-left:16%;
+    padding-right:17%;
+    margin-top:5%;
+    margin-bottom: 1.5em;
+    align-items:end;
   }
 }
 
@@ -66,6 +74,12 @@
   font-size: clamp(9px, 1.7vw, 1.1rem);
   width:100%;
   height:100%;
+}
+@media (max-width:25em) {
+  .search-input{
+    padding:2.2% 0;
+    padding-left:5%;
+  }
 }
 .search-icon{
   border-radius: 5px;;
@@ -161,7 +175,7 @@
   background-color: var(--main-color);
   font-size: clamp(9px, 1.5vw, 1.1rem);
   display: block;
-  height:100%;
+  height:95%;
   width: 100%;
   border: none;
   border-radius: 3px;
@@ -179,7 +193,7 @@
 }
 .add-to-cart-button{
   border: none;
-  height:100%;
+  height:95%;
 }
 
 @media (max-width:66em) {

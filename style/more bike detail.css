@@ -38,7 +38,7 @@
   border-radius:4px;
   padding:2% 3%;
   margin-top:15%;
-  margin-bottom:2%;
+  margin-bottom:3%;
 }
 .bike-size-and-available-container .size, .available-bike{
   font-size: clamp(0.440rem, 1.6vw, 0.9rem);
@@ -48,6 +48,7 @@
   margin-top:0.5%;
   width:fit-content;
 }
+
 @media (max-width:65em) {
   .bike-more-detail-section{
     padding-right:7%;
@@ -58,6 +59,7 @@
     gap:7%;
   }
 }
+
 .order-and-cart-button-container{ 
   display:flex;
   gap:1%;
@@ -67,6 +69,25 @@
     max-height:2.3rem;
   }
 }
+@media (max-width:38rem) {
+  .order-and-cart-button-container{
+    max-height:2rem;
+  }
+  .bike-more-detail-section{
+    padding-right:6%;
+    padding-left:5%;
+  }
+}
+@media (max-width:30rem) {
+  .order-and-cart-button-container{
+    max-height:1.6rem;
+  }
+  .bike-more-detail-section{
+    padding-right:6%;
+    padding-left:5%;
+  }
+}
+
 .order-and-cart-button-container input,
 .order-button,
 .cart-button{
@@ -77,7 +98,7 @@
   font-size:clamp(0.590rem, 2vw, 1.250rem);
   position: relative;
   flex:0.5;
-  min-width:2.5rem;
+  min-width:2.8rem;
   max-width:7rem;
   align-content: center;
 }
@@ -85,12 +106,21 @@
   position:absolute;
   width:13%;
 }.quantity-container .minus-button{
-  left:7%;
+  left:9%;
   top:33%;
 }.quantity-container .plus-button{
-  right:7%;
+  right:9%;
   top:33%;
 }
+@media (max-width:25em) {
+  }.quantity-container .minus-button{
+    left:9%;
+    top:36%;
+  }.quantity-container .plus-button{
+    right:9%;
+    top:36%;
+}
+
 
 .order-and-cart-button-container .order-button-container{
   flex:1; 
@@ -108,7 +138,9 @@
   flex:0.3;
   max-width:2.5rem;
   min-width:1.3rem;
-  align-content: center;
+}
+.cart-image{
+  height: 100%;
 }
 /* .quantity-container{
   position: relative;

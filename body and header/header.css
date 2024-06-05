@@ -11,7 +11,7 @@ header {
   border-bottom:1px solid rgba(0, 0, 0, 0.426);
 }
 .logo-container {
-  width: clamp(4.4rem, 14.7vw, 10.5rem);
+  width: clamp(4.2rem, 14.7vw, 10.5rem);
   height: 0 auto;
 }
 .logo {
@@ -31,7 +31,7 @@ header {
   cursor: pointer;
 }
 .cart-quantity{
-  font-size: clamp(12px, 1.9vw, 1.2rem);
+  font-size: clamp(10px, 1.9vw, 1.2rem);
   position: absolute;
   color:rgb(2, 151, 2);
   right: 0;
@@ -56,12 +56,12 @@ header {
   flex: 1;
   display: flex;
   justify-content:space-between;
-  padding:0 2%;
+  padding:0 2.5%;
 }
 @media(min-width:700px){
   .nav-container{
-    justify-content: space-evenly;
-    padding:0;
+    justify-content: space-around;
+    padding:0 1%;
   }
 }
 .navigation {
