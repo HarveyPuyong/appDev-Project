@@ -142,24 +142,6 @@
 .cart-image{
   height: 100%;
 }
-/* .quantity-container{
-  position: relative;
-}
-.btn-minus,
-.btn-plus {
-  position: absolute;
-  top:50%;
-  transform: translateY(-50%);
-  border:none;
-  background: transparent;
-  opacity:0.9;
-  width:11%;
-}.btn-minus {
-  left:7%;
-}.btn-plus {
-  right:7%;
-} */
-
 /* components */
 .bike-components-container{
   font-weight: bold;
@@ -167,7 +149,7 @@
   margin-top:2%;
 }
 .bike-components-container .components-list{
-  padding-left:2.6%;
+  padding-left:1.5rem;
 }
 ul{
   padding-top:0.8%;

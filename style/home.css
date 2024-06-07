@@ -127,7 +127,7 @@
   line-height: 1.5em;
   color:black;
   text-align: justify;
-  font-size:clamp(0.6rem, 2.2vw, 1.4rem);
+  font-size:clamp(0.6rem, 2.2vw, 1.3rem);
   margin-top:7%;
 }
 @media(max-width:25rem) {

@@ -73,7 +73,15 @@ export function moreBikeDetail(orderButton, addToCart, cart){
       Components
       <div class="components-list">
         <ul>
-          ${bikeComponents}
+          <li>Frame:Desribe the material(aluminum, carbon fiber steel, titanium),frame geomerty</li>
+          <li>Color:Describe the color</li>
+          <li>Wheel:Mention the size, tread pattern and wheater they're tubeless or not</li>
+          <li>Tires:Specify the tire size, thread pattern, and wheater they're tubless-ready or not</li>
+          <li>Fork:Highlight the type of suspension()if applicable), travel distance and any adjustment available</li>
+          <li>Drivetrain: Include details about the number of gears, brand of components and type gearing system</li>
+          <li>Brakes:Specify wheater they're rim breaks or disc brakes, brand and type</li>
+          <li>Saddle:Mention the brand,type and any special features like gel padding of ergonomic design</li>
+
         </ul>
       </div>
     </div>

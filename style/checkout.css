@@ -143,7 +143,7 @@ form .order-summary-section{
   margin:0 3%;
 }
 .order-summary-section .main{
-  max-height:23.5rem;
+  max-height:21rem;
   overflow-x: scroll;
   scrollbar-width:thin;
   padding:0 1.5%;
@@ -175,7 +175,9 @@ form .order-summary-section{
   font-size:clamp(0.8rem, 2.3vw, 1.2rem);
   font-weight: bold;
   text-align: end;
-  margin:0 3%;
+  margin:0 1%;
   margin-top:1.8%;
-  padding-right:1%;
+  padding:1.5% 0;
+  color:red;
+  
 }
